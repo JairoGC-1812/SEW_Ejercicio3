@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora básica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css" />
+    <script src="CalculadoraBasica.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora Básica</h1>
+    <form>
+        <div class="calculadora">
+            <p id="textoPantalla">0</p>
+            <p>
+                <input type="button" class="memoryButton" value="mrc" onclick="mrc()" />
+                <input type="button" class="memoryButton" value="m+" onclick="mMas()" />
+                <input type="button" class="memoryButton" value="m-" onclick="mMenos()" />
+                <input type="button" class="operation" value="/" onclick="division()" />
+            </p>
+            <p>
+                <input type="button" value="7" onclick="digitos('7')" />
+                <input type="button" value="8" onclick="digitos('8')" />
+                <input type="button" value="9" onclick="digitos('9')" />
+                <input type="button" class="operation" value="*" onclick="multiplicacion()" />
+            </p>
+            <p>
+                <input type="button" value="4" onclick="digitos('4')" />
+                <input type="button" value="5" onclick="digitos('5')" />
+                <input type="button" value="6" onclick="digitos('6')" />
+                <input type="button" class="operation" value="-" onclick="resta()" />
+            </p>
+            <p>
+                <input type="button" value="1" onclick="digitos('1')" />
+                <input type="button" value="2" onclick="digitos('2')" />
+                <input type="button" value="3" onclick="digitos('3')" />
+                <input type="button" class="operation" value="+" onclick="suma()" />
+            </p>
+            <p>
+                <input type="button" value="0" onclick="digitos('0')" />
+                <input type="button" value="." onclick="punto()" />
+                <input type="button" value="C" onclick="borrar()" />
+                <input type="button" value="=" onclick="igual()" />
+            </p>
+        </div>
+    </form>
+
+</body>
+
+</html>
