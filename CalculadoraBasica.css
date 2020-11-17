@@ -15,15 +15,14 @@ body{
     margin-right: auto;
     
 }
-@media screen and (max-width:1000px){
+@media screen and (max-width:1080px){
     .calculadora{
-        width: 100%;
+        width: 400px;
     }
 }
 @media screen and (max-width: 600px){
     .calculadora{
         width: 100%;
-        height: fit-content;
     }
 }
 			 
@@ -50,6 +49,7 @@ body{
     border-radius: 7px;
     background-color: rgb(143, 141, 141);
     color: white;
+    position: relative
 
 }
 
