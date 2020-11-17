@@ -3,13 +3,12 @@ body{
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
 }
 
 .calculadora { 
     border: 3px black ridge; 
     border-radius: 15px;
-    width: 80%;
+    width: 20%;
     text-align: center;
     background-color: #1f1f1f;
     margin-left: auto;
@@ -17,12 +16,12 @@ body{
     
 }
 @media screen and (max-width:1000px){
-    body{
+    .calculadora{
         width: 400px;
     }
 }
 @media screen and (max-width: 600px){
-    body{
+    .calculadora{
         width: 80%;
         height: fit-content;
     }
