@@ -17,12 +17,12 @@ body{
 }
 @media screen and (max-width:1000px){
     .calculadora{
-        width: 400px;
+        width: 100%;
     }
 }
 @media screen and (max-width: 600px){
     .calculadora{
-        width: 80%;
+        width: 100%;
         height: fit-content;
     }
 }
