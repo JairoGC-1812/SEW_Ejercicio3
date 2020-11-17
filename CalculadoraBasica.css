@@ -9,14 +9,14 @@ body{
 .calculadora { 
     border: 3px black ridge; 
     border-radius: 15px;
-    width: 100%;
+    width: 80%;
     text-align: center;
     background-color: #1f1f1f;
     margin-left: auto;
     margin-right: auto;
     
 }
-/* @media screen and (max-width:1000px){
+@media screen and (max-width:1000px){
     body{
         width: 400px;
     }
@@ -24,9 +24,9 @@ body{
 @media screen and (max-width: 600px){
     body{
         width: 80%;
-        line-height: 100%;
+        height: fit-content;
     }
-} */
+}
 			 
 #textoPantalla { 
     width: 80%;
