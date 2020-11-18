@@ -298,6 +298,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
     mrc() {
         if (this.innerScreen == "") {
             this.innerScreen = this.memory;
+            this.screen = this.memory;
         } else {
             try {
                 this.memory = eval(this.innerScreen);
