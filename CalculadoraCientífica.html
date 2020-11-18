@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora científica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraCientifica.js"></script>
+</head>
+
+<body>
+    <h1>Calculadora científica</h1>
+    <form>
+        <div class="calculadora">
+            <p>
+                <input type="text" id="textoPantalla" disabled />
+
+            </p>
+            <p>
+                <input type="button" class="complexOperation" value="x²" onclick="calc.cuadrado()" />
+                <input type="button" class="complexOperation" value="^" onclick="calc.potencia()" />
+                <input type="button" class="complexOperation" value="sin" onclick="calc.sin()" />
+                <input type="button" class="complexOperation" value="cos" onclick="calc.cos()" />
+                <input type="button" class="complexOperation" value="tan" onclick="calc.tan()" />
+            </p>
+
+            <p>
+                <input type="button" class="complexOperation" value="log" onclick="calc.log()" />
+                <input type="button" class="complexOperation" value="exp" onclick="calc.exp()" />
+                <input type="button" class="complexOperation" value="arcsin" onclick="calc.arcSin()" />
+                <input type="button" class="complexOperation" value="arccos" onclick="calc.arcCos()" />
+                <input type="button" class="complexOperation" value="arctan" onclick="calc.arcTan()" />
+            </p>
+            <p>
+
+            <p>
+                <input type="button" class="complexOperation" value="(" onclick="calc.abrirParentesis()" />
+                <input type="button" class="complexOperation" value=")" onclick="calc.cerrarParentesis()" />
+                <input type="button" class="complexOperation" value="√" onclick="calc.raiz()" />
+                <input type="button" class="complexOperation" value="mod" onclick="calc.modulo()" />
+                <input type="button" class="complexOperation" value="10ⁿ" onclick="calc.potenciaDeDiez()" />
+            </p>
+
+            <p>
+                <input type="button" class="memoryButton" value="mrc" onclick="calc.mrc()" />
+                <input type="button" class="memoryButton" value="m+" onclick="calc.mMas()" />
+                <input type="button" class="memoryButton" value="m-" onclick="calc.mMenos()" />
+                <input type="button" class="basicOperation" value="←" onclick="calc.borrarUno()" />
+                <input type="button" class="basicOperation" value="/" onclick="calc.division()" />
+            </p>
+            <p>
+                <input type = "button" value="π" onclick="calc.escribirPi()"/>
+                <input type="button" value="7" onclick="calc.digitos('7')" />
+                <input type="button" value="8" onclick="calc.digitos('8')" />
+                <input type="button" value="9" onclick="calc.digitos('9')" />
+                <input type="button" class="basicOperation" value="*" onclick="calc.multiplicacion()" />
+            </p>
+            <p>
+                <input type = "button" value="e" onclick="calc.escribirE()"/>
+                <input type="button" value="4" onclick="calc.digitos('4')" />
+                <input type="button" value="5" onclick="calc.digitos('5')" />
+                <input type="button" value="6" onclick="calc.digitos('6')" />
+                <input type="button" class="basicOperation" value="-" onclick="calc.resta()" />
+            </p>
+            <p>
+                <input type = "button" value="±" onclick="calc.invertirSigno()"/>
+                <input type="button" value="1" onclick="calc.digitos('1')" />
+                <input type="button" value="2" onclick="calc.digitos('2')" />
+                <input type="button" value="3" onclick="calc.digitos('3')" />
+                <input type="button" class="basicOperation" value="+" onclick="calc.suma()" />
+            </p>
+            <p>                
+                <input type="button" value="1/x" onclick="calc.invertirFraccion()" />
+                <input type="button" value="C" onclick="calc.borrar()" />
+                <input type="button" value="0" onclick="calc.digitos('0')" />
+                <input type="button" value="." onclick="calc.punto()" />
+                <input type="button" class ="basicOperation"value="=" onclick="calc.igual()" />
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>

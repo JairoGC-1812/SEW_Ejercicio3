@@ -1,0 +1,63 @@
+body{
+    background-color: wheat;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.calculadora { 
+    border: 3px black ridge; 
+    border-radius: 15px;
+    width: 20%;
+    text-align: center;
+    background-color: #1f1f1f;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+@media screen and (max-width:1080px){
+    .calculadora{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 700px){
+    .calculadora{
+        width: 100%;
+    }
+}
+			 
+#textoPantalla { 
+    width: 80%;
+    height: 50px;
+    border: 2px black solid; 
+    text-align: right;
+    line-height: 50px;
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 5px;
+    background-color: rgb(92, 173, 5);
+    font-family: "courier new"; 
+    font-size: x-large;
+    overflow: hidden;
+}
+
+.calculadora [type=button] { 
+    width: 15%;
+    height: 30px;
+    padding: 0;
+    border-radius: 7px;
+    background-color: rgb(143, 141, 141);
+    color: white;
+    position: relative
+
+}
+
+.calculadora .memoryButton
+{
+    background-color: rgb(94, 92, 92);
+}
+
+.calculadora .basicOperation{
+    background-color: rgb(192, 48, 48);
+}
