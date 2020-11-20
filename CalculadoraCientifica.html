@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora científica</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <script src="CalculadoraCientifica.js"></script>
+    
+</head>
+
+<body lang ="es">
+    <h1>Calculadora científica</h1>
+    <form>
+        <div class="calculadora">
+            <p>
+                <input type="text" id="textoPantalla" disabled />
+
+            </p>
+            <p>
+                <button class="complexOperation" onclick="calc.cuadrado()">x²</button>
+                <button class="complexOperation" onclick="calc.potencia()">^</button>
+                <button class="complexOperation" onclick="calc.sin()">sin</button>
+                <button class="complexOperation" onclick="calc.cos()">cos</button>
+                <button class="complexOperation" onclick="calc.tan()">tan</button>
+            </p>
+
+            <p>
+                <button class="complexOperation" onclick="calc.log()">log</button>
+                <button class="complexOperation" onclick="calc.exp()">exp</button>
+                <button class="complexOperation" onclick="calc.arcSin()">arcsin</button>
+                <button class="complexOperation" onclick="calc.arcCos()">arccos</button>
+                <button class="complexOperation" onclick="calc.arcTan()">arctan</button>
+            </p>
+            <p>
+
+            <p>
+                <button class="complexOperation" onclick="calc.abrirParentesis()">(</button>
+                <button class="complexOperation" onclick="calc.cerrarParentesis()">)</button>
+                <button class="complexOperation" onclick="calc.raiz()">√</button>
+                <button class="complexOperation" onclick="calc.modulo()">mod</button>
+                <button class="complexOperation" onclick="calc.potenciaDeDiez()">10</button>
+            </p>
+
+            <p>
+                <button class="memoryButton" onclick="calc.mrc()">mrc</button>
+                <button class="memoryButton" onclick="calc.mMas()">m+</button>
+                <button class="memoryButton" onclick="calc.mMenos()">m-</button>
+                <button class="basicOperation" onclick="calc.borrarUno()">←</button>
+                <button class="basicOperation" onclick="calc.division()">/</button>
+            </p>
+            <p>
+                <button onclick="calc.escribirPi()">π</button>
+                <button onclick="calc.digitos('7')">7</button>
+                <button onclick="calc.digitos('8')">8</button>
+                <button onclick="calc.digitos('9')">9</button>
+                <button class="basicOperation" onclick="calc.multiplicacion()" >*</button>
+            </p>
+            <p>
+                <button onclick="calc.escribirE()">e</button>
+                <button onclick="calc.digitos('4')">4</button>
+                <button onclick="calc.digitos('5')">5</button>
+                <button onclick="calc.digitos('6')">6</button>
+                <button class="basicOperation" onclick="calc.resta()">-</button>
+            </p>
+            <p>
+                <button onclick="calc.invertirSigno()">±</button>
+                <button onclick="calc.digitos('1')">1</button>
+                <button onclick="calc.digitos('2')">2</button>
+                <button onclick="calc.digitos('3')">3</button>
+                <button class="basicOperation" onclick="calc.suma()">+</button>
+            </p>
+            <p>                
+                <button onclick="calc.invertirFraccion()">1/x</button>
+                <button onclick="calc.borrar()">C</button>
+                <button onclick="calc.digitos('0')">0</button>
+                <button onclick="calc.punto()">.</button>
+                <button class ="basicOperation" onclick="calc.igual()">=</button>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
