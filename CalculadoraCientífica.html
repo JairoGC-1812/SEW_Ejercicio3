@@ -7,9 +7,10 @@
     <title>Calculadora científica</title>
     <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
     <script src="CalculadoraCientifica.js"></script>
+    
 </head>
 
-<body>
+<body lang ="es">
     <h1>Calculadora científica</h1>
     <form>
         <div class="calculadora">
@@ -18,64 +19,64 @@
 
             </p>
             <p>
-                <input type="button" class="complexOperation" value="x²" onclick="calc.cuadrado()" />
-                <input type="button" class="complexOperation" value="^" onclick="calc.potencia()" />
-                <input type="button" class="complexOperation" value="sin" onclick="calc.sin()" />
-                <input type="button" class="complexOperation" value="cos" onclick="calc.cos()" />
-                <input type="button" class="complexOperation" value="tan" onclick="calc.tan()" />
+                <button class="complexOperation" onclick="calc.cuadrado()">x²</button>
+                <button class="complexOperation" onclick="calc.potencia()">^</button>
+                <button class="complexOperation" onclick="calc.sin()">sin</button>
+                <button class="complexOperation" onclick="calc.cos()">cos</button>
+                <button class="complexOperation" onclick="calc.tan()">tan</button>
             </p>
 
             <p>
-                <input type="button" class="complexOperation" value="log" onclick="calc.log()" />
-                <input type="button" class="complexOperation" value="exp" onclick="calc.exp()" />
-                <input type="button" class="complexOperation" value="arcsin" onclick="calc.arcSin()" />
-                <input type="button" class="complexOperation" value="arccos" onclick="calc.arcCos()" />
-                <input type="button" class="complexOperation" value="arctan" onclick="calc.arcTan()" />
+                <button class="complexOperation" onclick="calc.log()">log</button>
+                <button class="complexOperation" onclick="calc.exp()">exp</button>
+                <button class="complexOperation" onclick="calc.arcSin()">arcsin</button>
+                <button class="complexOperation" onclick="calc.arcCos()">arccos</button>
+                <button class="complexOperation" onclick="calc.arcTan()">arctan</button>
             </p>
             <p>
 
             <p>
-                <input type="button" class="complexOperation" value="(" onclick="calc.abrirParentesis()" />
-                <input type="button" class="complexOperation" value=")" onclick="calc.cerrarParentesis()" />
-                <input type="button" class="complexOperation" value="√" onclick="calc.raiz()" />
-                <input type="button" class="complexOperation" value="mod" onclick="calc.modulo()" />
-                <input type="button" class="complexOperation" value="10ⁿ" onclick="calc.potenciaDeDiez()" />
+                <button class="complexOperation" onclick="calc.abrirParentesis()">(</button>
+                <button class="complexOperation" onclick="calc.cerrarParentesis()">)</button>
+                <button class="complexOperation" onclick="calc.raiz()">√</button>
+                <button class="complexOperation" onclick="calc.modulo()">mod</button>
+                <button class="complexOperation" onclick="calc.potenciaDeDiez()">10</button>
             </p>
 
             <p>
-                <input type="button" class="memoryButton" value="mrc" onclick="calc.mrc()" />
-                <input type="button" class="memoryButton" value="m+" onclick="calc.mMas()" />
-                <input type="button" class="memoryButton" value="m-" onclick="calc.mMenos()" />
-                <input type="button" class="basicOperation" value="←" onclick="calc.borrarUno()" />
-                <input type="button" class="basicOperation" value="/" onclick="calc.division()" />
+                <button class="memoryButton" onclick="calc.mrc()">mrc</button>
+                <button class="memoryButton" onclick="calc.mMas()">m+</button>
+                <button class="memoryButton" onclick="calc.mMenos()">m-</button>
+                <button class="basicOperation" onclick="calc.borrarUno()">←</button>
+                <button class="basicOperation" onclick="calc.division()">/</button>
             </p>
             <p>
-                <input type = "button" value="π" onclick="calc.escribirPi()"/>
-                <input type="button" value="7" onclick="calc.digitos('7')" />
-                <input type="button" value="8" onclick="calc.digitos('8')" />
-                <input type="button" value="9" onclick="calc.digitos('9')" />
-                <input type="button" class="basicOperation" value="*" onclick="calc.multiplicacion()" />
+                <button onclick="calc.escribirPi()">π</button>
+                <button onclick="calc.digitos('7')">7</button>
+                <button onclick="calc.digitos('8')">8</button>
+                <button onclick="calc.digitos('9')">9</button>
+                <button class="basicOperation" onclick="calc.multiplicacion()" >*</button>
             </p>
             <p>
-                <input type = "button" value="e" onclick="calc.escribirE()"/>
-                <input type="button" value="4" onclick="calc.digitos('4')" />
-                <input type="button" value="5" onclick="calc.digitos('5')" />
-                <input type="button" value="6" onclick="calc.digitos('6')" />
-                <input type="button" class="basicOperation" value="-" onclick="calc.resta()" />
+                <button onclick="calc.escribirE()">e</button>
+                <button onclick="calc.digitos('4')">4</button>
+                <button onclick="calc.digitos('5')">5</button>
+                <button onclick="calc.digitos('6')">6</button>
+                <button class="basicOperation" onclick="calc.resta()">-</button>
             </p>
             <p>
-                <input type = "button" value="±" onclick="calc.invertirSigno()"/>
-                <input type="button" value="1" onclick="calc.digitos('1')" />
-                <input type="button" value="2" onclick="calc.digitos('2')" />
-                <input type="button" value="3" onclick="calc.digitos('3')" />
-                <input type="button" class="basicOperation" value="+" onclick="calc.suma()" />
+                <button onclick="calc.invertirSigno()">±</button>
+                <button onclick="calc.digitos('1')">1</button>
+                <button onclick="calc.digitos('2')">2</button>
+                <button onclick="calc.digitos('3')">3</button>
+                <button class="basicOperation" onclick="calc.suma()">+</button>
             </p>
             <p>                
-                <input type="button" value="1/x" onclick="calc.invertirFraccion()" />
-                <input type="button" value="C" onclick="calc.borrar()" />
-                <input type="button" value="0" onclick="calc.digitos('0')" />
-                <input type="button" value="." onclick="calc.punto()" />
-                <input type="button" class ="basicOperation"value="=" onclick="calc.igual()" />
+                <button onclick="calc.invertirFraccion()">1/x</button>
+                <button onclick="calc.borrar()">C</button>
+                <button onclick="calc.digitos('0')">0</button>
+                <button onclick="calc.punto()">.</button>
+                <button class ="basicOperation" onclick="calc.igual()">=</button>
             </p>
         </div>
     </form>
