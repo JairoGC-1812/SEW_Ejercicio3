@@ -8,22 +8,34 @@ class CalculadoraBasica {
         if (this.screen == "") {
             this.screen = this.memory;
         } else {
-            this.memory = eval(this.screen);
-            this.screen = "";
+            try {
+                this.memory = eval(this.screen);
+                this.screen = "";
+            } catch (err) {
+                this.screen = "Error = " + err;
+            }
         }
         document.getElementById("textoPantalla").value = this.screen;
     }
     mMas() {
         if (this.screen != "") {
-            this.memory = eval(this.memory + eval(this.screen));
-            this.screen = "";
+            try {
+                this.memory = eval(this.memory + eval(this.screen));
+                this.screen = "";
+            } catch (err) {
+                this.screen = "Error = " + err;
+            }
         }
         document.getElementById("textoPantalla").value = this.screen;
     }
     mMenos() {
         if (this.screen != "") {
-            this.memory = eval(this.memory - eval(this.screen));
-            this.screen = "";
+            try {
+                this.memory = eval(this.memory - eval(this.screen));
+                this.screen = "";
+            } catch (err) {
+                this.screen = "Error = " + err;
+            }
         }
         document.getElementById("textoPantalla").value = this.screen;
     }
@@ -56,8 +68,13 @@ class CalculadoraBasica {
         document.getElementById("textoPantalla").value = this.screen;
     }
     igual() {
-        if (screen != "")
-            this.screen = eval(this.screen);
+        if (screen != "") {
+            try {
+                this.screen = eval(this.screen);
+            } catch (err) {
+                this.screen = "Error = " + err;
+            }
+        }
         document.getElementById("textoPantalla").value = this.screen;;
     }
 

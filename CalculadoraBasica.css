@@ -40,6 +40,7 @@ body{
     font-family: "courier new"; 
     font-size: x-large;
     overflow: hidden;
+    color: black;
 }
 
 .calculadora [type=button] { 
