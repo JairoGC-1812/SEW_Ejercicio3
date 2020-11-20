@@ -11,7 +11,6 @@
 
 <body>
     <h1>Calculadora Básica</h1>
-    <form>
         <div class="calculadora">
             <p>
                 <label for="textoPantalla">Pantalla de la calculadora</label>
@@ -22,35 +21,33 @@
                 <button class="memoryButton" onclick="calc.mrc()">mrc</button>
                 <button class="memoryButton" onclick="calc.mMas()">m+</button>
                 <button class="memoryButton" onclick="calc.mMenos()">m-</button>
-                <button class="basicOperation" onclick="calc.division()">/</button>
+                <button class="operation" onclick="calc.division()">/</button>
             </p>
             <p>
                 <button onclick="calc.digitos('7')">7</button>
                 <button onclick="calc.digitos('8')">8</button>
                 <button onclick="calc.digitos('9')">9</button>
-                <button class="basicOperation" onclick="calc.multiplicacion()" >*</button>
+                <button class="operation" onclick="calc.multiplicacion()" >*</button>
             </p>
             <p>
                 <button onclick="calc.digitos('4')">4</button>
                 <button onclick="calc.digitos('5')">5</button>
                 <button onclick="calc.digitos('6')">6</button>
-                <input type="button" class="operation" value="-" onclick="calc.resta()" />
+                <button class="operation" onclick="calc.resta()">-</button>
             </p>
             <p>
-                <input type="button" value="1" onclick="calc.digitos('1')" />
-                <input type="button" value="2" onclick="calc.digitos('2')" />
-                <input type="button" value="3" onclick="calc.digitos('3')" />
-                <button class="basicOperation" onclick="calc.resta()">-</button>
+                <button onclick="calc.digitos('1')">1</button>
+                <button onclick="calc.digitos('2')">2</button>
+                <button onclick="calc.digitos('3')">3</button>
+                <button class="operation" onclick="calc.resta()">-</button>
             </p>
             <p>
-                <input type="button" value="C" onclick="calc.borrar()" />
                 <button onclick="calc.borrar()">C</button>
                 <button onclick="calc.digitos('0')">0</button>
                 <button onclick="calc.punto()">.</button>
-                <button class ="basicOperation" onclick="calc.igual()">=</button>
+                <button class ="operation" onclick="calc.igual()">=</button>
             </p>
         </div>
-    </form>
 </body>
 
 </html>
