@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora de consumo de agua</title>
+    <link rel="stylesheet" type="text/css" href="CalculadoraAgua.css" />
+    <script src="CalculadoraAgua.js"></script>
+
+</head>
+
+<body lang="es">
+    <h1 lang="es">Calculadora del consumo de agua</h1>
+
+    <h2>Baño </h2>
+    <div>
+        <p>¿Te duchas o te bañas?<br></p>
+        <label><input type="radio" name="tipodebaño" value="Ducha" onchange="calc.mostrarMinutosDucha(this.value)"
+                checked required> Ducha </label><br>
+        <label><input type="radio" name="tipodebaño" value="Baño" onchange="calc.mostrarMinutosDucha(this.value)"> Baño
+        </label><br>
+        <label for="vecesporsemana">¿Cuántas veces por semana?</label>
+        <input type="text" id="vecesporsemana"><br>
+        <div class = "indented" id="minutosducha">
+            <label for="tiempoducha">¿Durante cuántos minutos?</label>
+            <input type="text" id="tiempoducha"> <br>
+        </div>
+        <label for="inodoro">¿Cuántas veces utilizas el inodoro al día?</label>
+        <input type="text" id="inodoro"> <br>
+        <label for="dientes">¿Cuántas veces te lavas los dientes al día?</label>
+        <input type="text" id="dientes"> <br>
+        <label for="manos">¿Cuántas veces te lavas los manos al día?</label>
+        <input type="text" id="manos"> <br>
+        <label for="cara">¿Cuántas veces te lavas la cara al día?</label>
+        <input type="text" id="cara"><br>
+
+    </div>
+
+    <h2>Cocina</h2>
+    <div>
+        <p>¿Bebes agua embotellada?<br></p>
+        <label><input type="radio" name="beber" value="Sí" checked required> Sí </label><br>
+        <label><input type="radio" name="beber" value="No"> No </label><br>
+
+        ¿Utilizas lavavajillas?<br>
+        <label><input type="radio" name="lavavajillas" value="Sí" onchange="calc.mostrarGrifo(this.value);" checked
+                required> Sí </label><br>
+        <label><input type="radio" name="lavavajillas" value="No" onchange="calc.mostrarGrifo(this.value);"> No
+        </label><br>
+        <div class = "indented" id=vecesLavavajillas>
+            <label for="vecesLava">¿Cuántas veces al día?</label>
+            <input type="text" id="vecesLava"> <br>
+        </div>
+        <div class = "indented" id="grifo">
+            <label for="vecesGrifo">¿Cuántas veces al día friegas los platos?</label>
+            <input type="text" id="vecesGrifo"> <br>
+            ¿Dejas el grifo abierto mientras lo haces?<br>
+            <label><input type="radio" name="grifoAbierto" value="Sí" checked required> Sí </label><br>
+            <label><input type="radio" name="grifoAbierto" value="No"> No </label><br>
+        </div>
+    </div>
+    <h2>Limpieza</h2>
+    <div>
+        <p>
+            <label for="lavadoras">¿Cuántas lavadoras pones por semana?</label>
+            <input type="text" id="lavadoras"> <br>
+            <label for="fregona">¿Cuántas cubos por semana utilizas para fregar el suelo? (1 cubo = 5 litros)</label>
+            <input type="text" id="fregona"> <br>
+        </p>
+        <button onclick="calc.mostrarResultados()">Obtener resultados</button>
+        <div>
+            <p id="mensajedeerror"> Todos los campos deben estar cubiertos únicamente con números</p>
+            <p id="resultados">
+
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -85,7 +85,6 @@ class CalculadoraCientifica extends CalculadoraBasica {
         this.pi = Math.PI;
         this.e = Math.E;
         this.innerScreen = "";
-        this.waitingForPowerParenthesis = 0;
     }
 
     cuadrado() {
@@ -98,13 +97,8 @@ class CalculadoraCientifica extends CalculadoraBasica {
         document.getElementById("textoPantalla").value = this.innerScreen;
     }
     potencia() {
-        try {
-            this.innerScreen = "Math.pow((" + eval(this.screen) + "),"
-            this.screen += "^";
-            this.waitingForPowerParenthesis += 1;
-        } catch (err) {
-            this.screen = "Error = " + err;
-        }
+        this.innerScreen += "**";
+        this.screen += "^";
         document.getElementById("textoPantalla").value = this.screen;
     }
     sin() {
@@ -194,18 +188,8 @@ class CalculadoraCientifica extends CalculadoraBasica {
         document.getElementById("textoPantalla").value = this.screen;
     }
     modulo() {
-        try {
-            var aux = eval(this.innerScreen);
-            if (aux < 0) {
-                this.screen = eval(aux + "/-1");
-            }
-            else { 
-                this.screen = aux; 
-            }
-            this.innerScreen = this.screen;
-        } catch (err) {
-            this.screen = "Error = " + err;
-        }
+        this.innerScreen += "%"
+        this.screen = this.innerScreen;
         document.getElementById("textoPantalla").value = this.screen;
     }
     raiz() {
@@ -226,15 +210,15 @@ class CalculadoraCientifica extends CalculadoraBasica {
         }
         document.getElementById("textoPantalla").value = this.innerScreen;
     }
-    invertirSigno(){
-        this.innerScreen = eval(this.innerScreen); 
+    invertirSigno() {
+        this.innerScreen = eval(this.innerScreen);
         this.innerScreen = eval(this.innerScreen + "/-1");
         this.screen = this.innerScreen;
         document.getElementById("textoPantalla").value = this.innerScreen;
     }
-    invertirFraccion(){
+    invertirFraccion() {
         this.innerScreen = eval(this.innerScreen);
-        this.innerScreen = eval("1/"+ this.innerScreen)
+        this.innerScreen = eval("1/" + this.innerScreen)
         this.screen = this.innerScreen;
         document.getElementById("textoPantalla").value = this.innerScreen;
     }
@@ -256,47 +240,52 @@ class CalculadoraCientifica extends CalculadoraBasica {
         }
         document.getElementById("textoPantalla").value = this.screen;
     }
-    escribirPi(){
+    escribirPi() {
         this.screen += "π";
         this.innerScreen += this.pi;
         document.getElementById("textoPantalla").value = this.screen;
     }
-    escribirE(){
+    escribirE() {
         this.screen += "e";
         this.innerScreen += this.e;
         document.getElementById("textoPantalla").value = this.screen;
     }
-    borrarUno(){
+    borrarUno() {
+        var aux = this.screen.substring(this.screen.length - 1);
+        if (aux === "^")
+            this.innerScreen = this.innerScreen.substring(0, this.innerScreen.length - 2);
+        else
+            this.innerScreen = this.innerScreen.substring(0, this.innerScreen.length - 1);
+
         this.screen = this.screen.substring(0, this.screen.length - 1);
-        this.innerScreen = this.innerScreen.substring(0, this.innerScreen.length - 1);
         document.getElementById("textoPantalla").value = this.screen;
     }
     borrar() {
         super.borrar();
         this.innerScreen = "";
     }
-    suma(){
+    suma() {
         super.suma();
         this.innerScreen += "+"
     }
-    resta(){
+    resta() {
         super.resta();
         this.innerScreen += "-"
     }
-    multiplicacion(){
+    multiplicacion() {
         super.multiplicacion();
         this.innerScreen += "*"
     }
-    division(){
+    division() {
         super.division();
         this.innerScreen += "/"
     }
-    punto(){
+    punto() {
         super.punto();
         this.innerScreen += ".";
     }
     mrc() {
-        if (this.innerScreen == "") {
+        if (this.innerScreen === "") {
             this.innerScreen = this.memory;
             this.screen = this.memory;
         } else {
@@ -315,7 +304,7 @@ class CalculadoraCientifica extends CalculadoraBasica {
             try {
                 this.memory = eval(this.memory + eval(this.innerScreen));
                 this.innerScreen = "";
-                this.screen ="";
+                this.screen = "";
             } catch (err) {
                 this.screen = "Error = " + err;
             }

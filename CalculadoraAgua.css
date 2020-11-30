@@ -1,0 +1,26 @@
+#grifo{
+    display: none;
+}
+#mensajedeerror{
+    display: none;
+    color: red;
+}
+
+body{
+    background-color: #688beb;
+    color: rgb(0, 0, 0);
+    text-align: justify;
+    margin-right: auto;
+}
+h1{
+    text-align: center;
+}
+h2{
+    margin-left: 20%;
+}
+div{
+    margin-left: 25%;
+}
+.indented{
+    margin-left: 5%;
+}

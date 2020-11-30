@@ -1,0 +1,36 @@
+body {
+    font-family: Optima, sans-serif;
+    color: black;
+    background-color: white;
+    margin: 10px;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(60, 108, 240);
+    font-size:3em;
+    padding: 1em;
+    border-radius: 0.25em;
+    text-transform: uppercase;
+}
+
+
+h2 {
+    font-size:2em;
+    color: rgb(89, 25, 238);
+    text-align: center;
+}
+
+
+button {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    background-color: black;
+    color: white;
+    font-size:1em;
+    margin-left: 48%;
+    margin-right:auto;
+}
+
+

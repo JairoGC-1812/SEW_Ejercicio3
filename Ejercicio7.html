@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+
+</head>
+
+<body lang="es">
+    <h1 lang="es">Ejercicio7</h1>
+    <label id="prueba">Elemento a modificar</label><br>
+
+    <button onclick="ej.ocultar(prueba)">Ocultar</button>
+    <button onclick="ej.mostrar(prueba)">Mostrar</button>
+    <button onclick="ej.ocultarOMostrar(prueba)">Ocultar/Mostrar</button> <br>
+    <label>Introducir modificación de texto: <input type="text" id="campoparamodificar"></label>
+    <button onclick="ej.modificar(prueba)">Modificar</button> <br>
+    <label>Introducir nuevo texto para añadir: <input type="text" id="campoparaanadir"></label>
+    <button onclick="ej.anadirDetras(prueba, 'p')">Añadir detrás</button>
+    <button onclick="ej.anadirDelante(prueba, 'p')">Añadir delante</button> <br>
+    <button onclick="ej.eliminarTodos('p')">Borrar añadidos</button> <br>
+    <button onclick="ej.mostrarEtiquetas()">Mostrar etiquetas</button> <br>
+    <table>
+        <tr>
+            <th>Número</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Descripción</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ratón</td>
+            <td>10</td>
+            <td class = "price">100</td>
+            <td>Alta sensibilidad</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Altavoz</td>
+            <td>15</td>
+            <td class = "price">990</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Hard Drive</td>
+            <td>35</td>
+            <td class = "price">3580</td>
+            <td>3 Tb</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>RAM</td>
+            <td>22</td>
+            <td class = "price">399</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Teclado</td>
+            <td>10</td>
+            <td class = "price">3500</td>
+            <td>Inalámbrico</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Router Wi-Fi</td>
+            <td>&nbsp;</td>
+            <td class = "price">3990</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>SSD</td>
+            <td>62</td>
+            <td class = "price">3000</td>
+            <td>512 Mb</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Procesador Intel</td>
+            <td>5</td>
+            <td class = "price">7000</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Audífonos</td>
+            <td>&nbsp;</td>
+            <td class = "price">350</td>
+            <td>Con eliminación de ruidos</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Monitor</td>
+            <td>25</td>
+            <td class = "price">1990</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td>Total: </td>
+            <td></td>
+            <td></td>
+            <td id = "res"></td>
+            <td></td>
+        </tr>
+    </table>
+    <button onclick="ej.sumarPrecio()">Suma de precios</button> <br>
+</body>
+
+</html>
