@@ -16,11 +16,11 @@
         <h2>Baño </h2>
         <div>
             <p>¿Te duchas o te bañas?<br></p>
-            <label><input type="radio" name="tipodebaño" value="Ducha" onchange="calc.mostrarMinutosDucha(this.value)"
-                    checked required> Ducha </label><br>
-            <label><input type="radio" name="tipodebaño" value="Baño" onchange="calc.mostrarMinutosDucha(this.value)">
-                Baño
-            </label><br>
+            <fieldset>
+                <label><input type="radio" name="tipodebaño" value="Ducha" onchange="calc.mostrarMinutosDucha(this.value)" checked required> Ducha </label><br>
+                <label><input type="radio" name="tipodebaño" value="Baño" onchange="calc.mostrarMinutosDucha(this.value)">Baño</label><br>
+            </fieldset>
+            
             <label for="vecesporsemana">¿Cuántas veces por semana?</label>
             <input type="text" id="vecesporsemana"><br>
             <div class="indented" id="minutosducha">
@@ -50,11 +50,11 @@
             <label><input type="radio" name="lavavajillas" value="No" onchange="calc.mostrarGrifo(this.value);"> No
             </label><br>
             <div class="indented" id=vecesLavavajillas>
-                <label for="vecesLava">¿Cuántas veces al día?</label>
+                <label for="vecesLava">¿Cuántas veces al día? (numero)</label>
                 <input type="text" id="vecesLava"> <br>
             </div>
             <div class="indented" id="grifo">
-                <label for="vecesGrifo">¿Cuántas veces al día friegas los platos?</label>
+                <label for="vecesGrifo">¿Cuántas veces al día friegas los platos? (numero)</label>
                 <input type="text" id="vecesGrifo"> <br>
                 ¿Dejas el grifo abierto mientras lo haces?<br>
                 <label><input type="radio" name="grifoAbierto" value="Sí" checked required> Sí </label><br>
@@ -64,7 +64,7 @@
         <h2>Limpieza</h2>
         <div>
             <p>
-                <label for="lavadoras">¿Cuántas lavadoras pones por semana?</label>
+                <label for="lavadoras">¿Cuántas lavadoras pones por semana? (numero)</label>
                 <input type="text" id="lavadoras"> <br>
                 <label for="fregona">¿Cuántas cubos por semana utilizas para fregar el suelo? (1 cubo = 5
                     litros)</label>
