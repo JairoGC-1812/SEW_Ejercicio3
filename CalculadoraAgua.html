@@ -12,7 +12,7 @@
 
 <body lang="es">
     <h1 lang="es">Calculadora del consumo de agua</h1>
-    <form>
+    <form onsubmit="return false">
         <h2>Baño </h2>
         <div>
             <p>¿Te duchas o te bañas?<br></p>
@@ -70,10 +70,10 @@
                     litros)</label>
                 <input type="text" id="fregona"> <br>
             </p>
-            <button onclick="calc.mostrarResultados()">Obtener resultados</button>
 
-
+            <button type="submit" onclick="calc.mostrarResultados()">Obtener resultados</button>
     </form>
+
     <div>
         <p id="mensajedeerror"> Todos los campos deben estar cubiertos únicamente con números</p>
         <p id="resultados">

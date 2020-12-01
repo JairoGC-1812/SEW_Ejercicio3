@@ -53,7 +53,7 @@ class CalculadoraAgua {
         this.manejarError(veces, 0);
         var res = (veces * 5)
         this.total += res;        
-        return "Su consumo de agua para fregar el suelo " + res + "litros al día.\n";
+        return "Su consumo de agua para fregar el suelo " + res + " litros al día.\n";
     }
     resultadosLavadora() {
         var veces = Number(document.getElementById("lavadoras").value);
@@ -62,7 +62,7 @@ class CalculadoraAgua {
         var res = (veces * 50)
         this.total += res;
         
-        return "Su consumo de agua en la lavadora es de " + res + "litros al día.\n";
+        return "Su consumo de agua en la lavadora es de " + res + " litros al día.\n";
     }
     resultadosLavavajillas(){
         var veces = Number(document.getElementById("vecesLava").value);
@@ -70,7 +70,7 @@ class CalculadoraAgua {
         this.manejarError(veces, 0);
         var res = (veces * 10);
         this.total += res;
-        return "Su consumo de agua en el lavavajillas es de " + res + "litros al día.\n";
+        return "Su consumo de agua en el lavavajillas es de " + res + " litros al día.\n";
     }
     resultadosAMano() {
         var veces = Number(document.getElementById("vecesGrifo").value);
@@ -83,7 +83,7 @@ class CalculadoraAgua {
             res = veces * 50;
         }
         this.total += res;
-        return "Su consumo de agua al fregar los platos es de " + res + "litros al día.\n";
+        return "Su consumo de agua al fregar los platos es de " + res + " litros al día.\n";
     }
     resultadosBeber() {
         var a = document.getElementsByName("beber");
@@ -99,7 +99,7 @@ class CalculadoraAgua {
         this.manejarError(veces, 0);
         var res = (veces * 4)
         this.total += res;
-        return "Su consumo de agua al lavarse la cara es de " + res + "litros al día.\n"
+        return "Su consumo de agua al lavarse la cara es de " + res + " litros al día.\n"
     }
     resultadosManos() {
         var veces = Number(document.getElementById("manos").value);
@@ -107,7 +107,7 @@ class CalculadoraAgua {
         this.manejarError(veces, 0);
         var res = (veces * 4)
         this.total += res;
-        return "Su consumo de agua al lavarse las manos es de " + res + "litros al día.\n"
+        return "Su consumo de agua al lavarse las manos es de " + res + " litros al día.\n"
     }
     resultadosDientes() {
         var veces = Number(document.getElementById("dientes").value);
@@ -115,7 +115,7 @@ class CalculadoraAgua {
         this.manejarError(veces, 0);
         var res = (veces * 3)
         this.total += res;
-        return "Su consumo de agua al lavarse los dientes es de " + res + "litros al día.\n"
+        return "Su consumo de agua al lavarse los dientes es de " + res + " litros al día.\n"
     }
     resultadosInodoro() {
         var veces = Number(document.getElementById("inodoro").value);
@@ -123,7 +123,7 @@ class CalculadoraAgua {
         this.manejarError(veces, 0);
         var res = (veces * 10)
         this.total += res;
-        return "Su consumo de agua en el inodoro es de " + res + "litros al día.\n"
+        return "Su consumo de agua en el inodoro es de " + res + " litros al día.\n"
     }
     resultadosDucha() {
         var veces = Number(document.getElementById("vecesporsemana").value);
@@ -142,7 +142,7 @@ class CalculadoraAgua {
         this.manejarError(veces, 0);
         var res = (veces * 230) / 7
         this.total += res;
-        return "Su consumo de agua en la bañera es de " + res + "litros al día.\n"
+        return "Su consumo de agua en la bañera es de " + res + " litros al día.\n"
     }
 
     manejarError(num1, num2) {
