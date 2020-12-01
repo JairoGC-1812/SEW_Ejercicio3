@@ -16,11 +16,13 @@
         <h2>Baño </h2>
         <div>
             <p>¿Te duchas o te bañas?<br></p>
-            <fieldset legend = "Seleccionar el tipo de ducha del usuario">
-                <label><input type="radio" name="tipodebaño" value="Ducha" onchange="calc.mostrarMinutosDucha(this.value)" checked required> Ducha </label><br>
-                <label><input type="radio" name="tipodebaño" value="Baño" onchange="calc.mostrarMinutosDucha(this.value)">Baño</label><br>
+            <fieldset legend="Seleccionar el tipo de ducha del usuario">
+                <label><input type="radio" name="tipodebaño" value="Ducha"
+                        onchange="calc.mostrarMinutosDucha(this.value)" checked required> Ducha </label><br>
+                <label><input type="radio" name="tipodebaño" value="Baño"
+                        onchange="calc.mostrarMinutosDucha(this.value)">Baño</label><br>
             </fieldset>
-            
+
             <label for="vecesporsemana">¿Cuántas veces por semana?</label>
             <input type="text" id="vecesporsemana"><br>
             <div class="indented" id="minutosducha">
@@ -41,14 +43,21 @@
         <h2>Cocina</h2>
         <div>
             <p>¿Bebes agua embotellada?<br></p>
-            <label><input type="radio" name="beber" value="Sí" checked required> Sí </label><br>
-            <label><input type="radio" name="beber" value="No"> No </label><br>
+            <fieldset legend="Seleccionar como bebe agua el usuario">
+                <label><input type="radio" name="beber" value="Sí" checked required> Sí </label><br>
+                <label><input type="radio" name="beber" value="No"> No </label><br>
+            </fieldset>
 
-            ¿Utilizas lavavajillas?<br>
-            <label><input type="radio" name="lavavajillas" value="Sí" onchange="calc.mostrarGrifo(this.value);" checked
-                    required> Sí </label><br>
-            <label><input type="radio" name="lavavajillas" value="No" onchange="calc.mostrarGrifo(this.value);"> No
-            </label><br>
+            <p>¿Utilizas lavavajillas?<br></p>
+
+            <fieldset legend="Seleccionar como friega los platos el usuario">
+                <label><input type="radio" name="lavavajillas" value="Sí" onchange="calc.mostrarGrifo(this.value);"
+                        checked required> Sí </label><br>
+                <label><input type="radio" name="lavavajillas" value="No" onchange="calc.mostrarGrifo(this.value);"> No
+                </label><br>
+
+            </fieldset>
+
             <div class="indented" id=vecesLavavajillas>
                 <label for="vecesLava">¿Cuántas veces al día? (numero)</label>
                 <input type="text" id="vecesLava"> <br>
@@ -57,8 +66,10 @@
                 <label for="vecesGrifo">¿Cuántas veces al día friegas los platos? (numero)</label>
                 <input type="text" id="vecesGrifo"> <br>
                 ¿Dejas el grifo abierto mientras lo haces?<br>
-                <label><input type="radio" name="grifoAbierto" value="Sí" checked required> Sí </label><br>
-                <label><input type="radio" name="grifoAbierto" value="No"> No </label><br>
+                <fieldset legend="Seleccionar si el usuario mantiene el grifo abierto mientras friega">
+                    <label><input type="radio" name="grifoAbierto" value="Sí" checked required> Sí </label><br>
+                    <label><input type="radio" name="grifoAbierto" value="No"> No </label><br>
+                </fieldset>
             </div>
         </div>
         <h2>Limpieza</h2>
